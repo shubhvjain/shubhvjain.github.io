@@ -156,4 +156,18 @@
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
-  
+
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    /* background-color: #cae8ca; */
+    /* border: 2px solid #4CAF50; */
+  }
+  .objCode{
+    /* background-color: rgba(245,217,149,0.3); */
+    font-size: 11px;
+    color: rgb(212, 82, 82);
+  }
