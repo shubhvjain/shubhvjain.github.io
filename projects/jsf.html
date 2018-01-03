@@ -67,7 +67,144 @@
 
                 <div class="blog-post" id="builder">
                         <h2 class="blog-post-title">Form builder</h2>
-                        <hr> <br> 
+                        <hr> <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <form>
+                                            <div class="form-group row">
+                                              <label for="name" class="col-4 col-form-label">Name/ID</label> 
+                                              <div class="col-8">
+                                                <input id="name" name="name" placeholder="Name must be unique" type="text" class="form-control here">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="type" class="col-4 col-form-label">Type</label> 
+                                              <div class="col-8">
+                                                <select id="type" name="type" class="custom-select">
+                                                  <option value="text">Text</option>
+                                                  <option value="number">Number</option>
+                                                  <option value="password">Password</option>
+                                                  <option value="email">Email</option>
+                                                  <option value="url">URL</option>
+                                                  <option value="color">Color</option>
+                                                  <option value="file">File</option>
+                                                  <option value="date">Date</option>
+                                                  <option value="time">Time</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="max" class="col-4 col-form-label">Max</label> 
+                                              <div class="col-8">
+                                                <input id="max" name="max" type="text" class="form-control here" aria-describedby="maxHelpBlock"> 
+                                                <span id="maxHelpBlock" class="form-text text-muted">Valid for type= number</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="min" class="col-4 col-form-label">Min</label> 
+                                              <div class="col-8">
+                                                <input id="min" name="min" type="text" class="form-control here" aria-describedby="minHelpBlock"> 
+                                                <span id="minHelpBlock" class="form-text text-muted">Valid for type= number</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputClass" class="col-4 col-form-label">Input class</label> 
+                                              <div class="col-8">
+                                                <input id="inputClass" name="inputClass" type="text" class="form-control here" aria-describedby="inputClassHelpBlock"> 
+                                                <span id="inputClassHelpBlock" class="form-text text-muted">Class to be specified in the input element</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="label" class="col-4 col-form-label">Label</label> 
+                                              <div class="col-8">
+                                                <input id="label" name="label" type="text" class="form-control here" aria-describedby="labelHelpBlock"> 
+                                                <span id="labelHelpBlock" class="form-text text-muted">Label to be displayed</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="labelClass" class="col-4 col-form-label">Label Class</label> 
+                                              <div class="col-8">
+                                                <input id="labelClass" name="labelClass" type="text" class="form-control here" aria-describedby="labelClassHelpBlock"> 
+                                                <span id="labelClassHelpBlock" class="form-text text-muted">Class for label</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="help" class="col-4 col-form-label">Help text</label> 
+                                              <div class="col-8">
+                                                <input id="help" name="help" type="text" class="form-control here" aria-describedby="helpHelpBlock"> 
+                                                <span id="helpHelpBlock" class="form-text text-muted">Help text to be displayed (like this one !)</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="helpClass" class="col-4 col-form-label">Help class</label> 
+                                              <div class="col-8">
+                                                <input id="helpClass" name="helpClass" type="text" class="form-control here" aria-describedby="helpClassHelpBlock"> 
+                                                <span id="helpClassHelpBlock" class="form-text text-muted">Class to be displayed in help box</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="default" class="col-4 col-form-label">Default value</label> 
+                                              <div class="col-8">
+                                                <input id="default" name="default" type="text" class="form-control here">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="maxLength" class="col-4 col-form-label">Size</label> 
+                                              <div class="col-8">
+                                                <input id="maxLength" name="maxLength" type="text" class="form-control here" aria-describedby="maxLengthHelpBlock"> 
+                                                <span id="maxLengthHelpBlock" class="form-text text-muted">The max size of input</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="pattern" class="col-4 col-form-label">Pattern</label> 
+                                              <div class="col-8">
+                                                <input id="pattern" name="pattern" type="text" class="form-control here" aria-describedby="patternHelpBlock"> 
+                                                <span id="patternHelpBlock" class="form-text text-muted">Pattern the input must match</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-4">Required</label> 
+                                              <div class="col-8">
+                                                <label class="custom-control custom-radio">
+                                                  <input name="required" type="radio" class="custom-control-input" value="true" aria-describedby="requiredHelpBlock"> 
+                                                  <span class="custom-control-indicator"></span> 
+                                                  <span class="custom-control-description">True</span>
+                                                </label>
+                                                <label class="custom-control custom-radio">
+                                                  <input name="required" type="radio" class="custom-control-input" value="false" aria-describedby="requiredHelpBlock"> 
+                                                  <span class="custom-control-indicator"></span> 
+                                                  <span class="custom-control-description">False</span>
+                                                </label> 
+                                                <span id="requiredHelpBlock" class="form-text text-muted">Whether this field is required</span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label class="col-4">Read only</label> 
+                                              <div class="col-8">
+                                                <label class="custom-control custom-radio">
+                                                  <input name="readOnly" type="radio" class="custom-control-input" value="true" aria-describedby="readOnlyHelpBlock"> 
+                                                  <span class="custom-control-indicator"></span> 
+                                                  <span class="custom-control-description">True</span>
+                                                </label>
+                                                <label class="custom-control custom-radio">
+                                                  <input name="readOnly" type="radio" class="custom-control-input" value="false" aria-describedby="readOnlyHelpBlock"> 
+                                                  <span class="custom-control-indicator"></span> 
+                                                  <span class="custom-control-description">False</span>
+                                                </label> 
+                                                <span id="readOnlyHelpBlock" class="form-text text-muted">Whether input is editable</span>
+                                              </div>
+                                            </div> 
+                                            <div class="form-group row">
+                                              <div class="offset-4 col-8">
+                                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                                              </div>
+                                            </div>
+                                          </form>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div> 
                         <form id="example1">
 
                         </form>
@@ -104,6 +241,9 @@
             <a href="#">Back to top</a>
         </p>
     </footer>
+
+
+    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
@@ -166,6 +306,7 @@
             $("#resetForm").on("click",function(){
                 eg.resetForm();
             })
+
         </script>
 </body>
 </html>
