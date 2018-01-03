@@ -106,3 +106,6 @@ border-color: #c6c8ca;
 .project-list li{
     padding: 8px 5px 8px 5px;
 }
+.small-img {
+    height: 125px;
+}
