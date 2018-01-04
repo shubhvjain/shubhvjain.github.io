@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +12,17 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link href="../assets/project.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/cm/codemirror.css">
+    <style>
+        .CodeMirror {
+            border-top: 1px solid rgb(119, 117, 117);
+            border-bottom: 1px solid rgb(116, 111, 111);
+        }
+    </style>
+
 </head>
+
 <body>
     <header>
         <div class="blog-masthead">
@@ -35,205 +46,225 @@
                         {{project_md}}
                     </div>
                 </div>
-              
+
                 <div class="blog-post" id="demo">
-                        <h2 class="blog-post-title">An example</h2>
-                        <hr> <br> 
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <div id="exampleDiv">
-                                    </div>  
-                                    <form id="example">
-                                    </form>
-                                    <div>
-                                        <button class="btn btn-primary" id="getData">Get data</button>
-                                        <button class="btn btn-success" id="setData">Add data</button>
-                                        <button class="btn btn-danger" id="resetForm">Reset</button>
-                                    </div>
-                                    <br>
-                                    <div id="resultData">
-
-                                    </div>
+                    <h2 class="blog-post-title">An example</h2>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="exampleDiv">
                             </div>
-                            <div class="col-md-6">
-                                <strong>JSON schema</strong>
-                                <div id="schemaCode">
+                            <form id="example">
+                            </form>
+                            <div>
+                                <button class="btn btn-primary" id="getData">Get data</button>
+                                <button class="btn btn-success" id="setData">Add data</button>
+                                <button class="btn btn-danger" id="resetForm">Reset</button>
+                            </div>
+                            <br>
+                            <div id="resultData">
 
-                                </div>
                             </div>
                         </div>
-                        
+                        <div class="col-md-6">
+                            <strong>JSON schema</strong>
+                            <div id="schemaCode">
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="blog-post" id="builder">
-                        <h2 class="blog-post-title">Form builder</h2>
-                        <hr> <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <form>
-                                            <div class="form-group row">
-                                              <label for="name" class="col-4 col-form-label">Name/ID</label> 
-                                              <div class="col-8">
-                                                <input id="name" name="name" placeholder="Name must be unique" type="text" class="form-control here">
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="type" class="col-4 col-form-label">Type</label> 
-                                              <div class="col-8">
-                                                <select id="type" name="type" class="custom-select">
-                                                  <option value="text">Text</option>
-                                                  <option value="number">Number</option>
-                                                  <option value="password">Password</option>
-                                                  <option value="email">Email</option>
-                                                  <option value="url">URL</option>
-                                                  <option value="color">Color</option>
-                                                  <option value="file">File</option>
-                                                  <option value="date">Date</option>
-                                                  <option value="time">Time</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="max" class="col-4 col-form-label">Max</label> 
-                                              <div class="col-8">
-                                                <input id="max" name="max" type="text" class="form-control here" aria-describedby="maxHelpBlock"> 
-                                                <span id="maxHelpBlock" class="form-text text-muted">Valid for type= number</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="min" class="col-4 col-form-label">Min</label> 
-                                              <div class="col-8">
-                                                <input id="min" name="min" type="text" class="form-control here" aria-describedby="minHelpBlock"> 
-                                                <span id="minHelpBlock" class="form-text text-muted">Valid for type= number</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="inputClass" class="col-4 col-form-label">Input class</label> 
-                                              <div class="col-8">
-                                                <input id="inputClass" name="inputClass" type="text" class="form-control here" aria-describedby="inputClassHelpBlock"> 
-                                                <span id="inputClassHelpBlock" class="form-text text-muted">Class to be specified in the input element</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="label" class="col-4 col-form-label">Label</label> 
-                                              <div class="col-8">
-                                                <input id="label" name="label" type="text" class="form-control here" aria-describedby="labelHelpBlock"> 
-                                                <span id="labelHelpBlock" class="form-text text-muted">Label to be displayed</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="labelClass" class="col-4 col-form-label">Label Class</label> 
-                                              <div class="col-8">
-                                                <input id="labelClass" name="labelClass" type="text" class="form-control here" aria-describedby="labelClassHelpBlock"> 
-                                                <span id="labelClassHelpBlock" class="form-text text-muted">Class for label</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="help" class="col-4 col-form-label">Help text</label> 
-                                              <div class="col-8">
-                                                <input id="help" name="help" type="text" class="form-control here" aria-describedby="helpHelpBlock"> 
-                                                <span id="helpHelpBlock" class="form-text text-muted">Help text to be displayed (like this one !)</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="helpClass" class="col-4 col-form-label">Help class</label> 
-                                              <div class="col-8">
-                                                <input id="helpClass" name="helpClass" type="text" class="form-control here" aria-describedby="helpClassHelpBlock"> 
-                                                <span id="helpClassHelpBlock" class="form-text text-muted">Class to be displayed in help box</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="default" class="col-4 col-form-label">Default value</label> 
-                                              <div class="col-8">
-                                                <input id="default" name="default" type="text" class="form-control here">
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="maxLength" class="col-4 col-form-label">Size</label> 
-                                              <div class="col-8">
-                                                <input id="maxLength" name="maxLength" type="text" class="form-control here" aria-describedby="maxLengthHelpBlock"> 
-                                                <span id="maxLengthHelpBlock" class="form-text text-muted">The max size of input</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label for="pattern" class="col-4 col-form-label">Pattern</label> 
-                                              <div class="col-8">
-                                                <input id="pattern" name="pattern" type="text" class="form-control here" aria-describedby="patternHelpBlock"> 
-                                                <span id="patternHelpBlock" class="form-text text-muted">Pattern the input must match</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label class="col-4">Required</label> 
-                                              <div class="col-8">
-                                                <label class="custom-control custom-radio">
-                                                  <input name="required" type="radio" class="custom-control-input" value="true" aria-describedby="requiredHelpBlock"> 
-                                                  <span class="custom-control-indicator"></span> 
-                                                  <span class="custom-control-description">True</span>
-                                                </label>
-                                                <label class="custom-control custom-radio">
-                                                  <input name="required" type="radio" class="custom-control-input" value="false" aria-describedby="requiredHelpBlock"> 
-                                                  <span class="custom-control-indicator"></span> 
-                                                  <span class="custom-control-description">False</span>
-                                                </label> 
-                                                <span id="requiredHelpBlock" class="form-text text-muted">Whether this field is required</span>
-                                              </div>
-                                            </div>
-                                            <div class="form-group row">
-                                              <label class="col-4">Read only</label> 
-                                              <div class="col-8">
-                                                <label class="custom-control custom-radio">
-                                                  <input name="readOnly" type="radio" class="custom-control-input" value="true" aria-describedby="readOnlyHelpBlock"> 
-                                                  <span class="custom-control-indicator"></span> 
-                                                  <span class="custom-control-description">True</span>
-                                                </label>
-                                                <label class="custom-control custom-radio">
-                                                  <input name="readOnly" type="radio" class="custom-control-input" value="false" aria-describedby="readOnlyHelpBlock"> 
-                                                  <span class="custom-control-indicator"></span> 
-                                                  <span class="custom-control-description">False</span>
-                                                </label> 
-                                                <span id="readOnlyHelpBlock" class="form-text text-muted">Whether input is editable</span>
-                                              </div>
-                                            </div> 
-                                            <div class="form-group row">
-                                              <div class="offset-4 col-8">
-                                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                                              </div>
-                                            </div>
-                                          </form>
+                    <h2 class="blog-post-title">Form builder</h2>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addFieldModal">Add field</button>
                             </div>
-                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="builder">Input</label>
+                                <textarea class="form-control" name="cmbuilder" id="cmbuilder" rows="3"></textarea>
 
                             </div>
-                        </div> 
-                        <form id="example1">
+                        </div>
+                    </div>
+                    Output
+                    <div id="errors">
 
-                        </form>
-                        
+                    </div>
+                    <form id="example1">
+
+                    </form>
+
                 </div>
-               
+
             </div>
             <aside class="col-sm-3 ml-sm-auto blog-sidebar ">
                 <div class="sticky">
                     <div class="sidebar-module">
-                    <h4>Content</h4>
-                    <ol class="list-unstyled">
-                        <li>
-                            <a href="#docs">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#demo">Example</a>
-                        </li>
-                        <li>
-                            <a href="#builder">Form Builder</a>
-                        </li>
-                    </ol>
-                </div>
-                <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="/">Back to home</a>
-                </nav>
+                        <h4>Content</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="#docs">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#demo">Example</a>
+                            </li>
+                            <li>
+                                <a href="#builder">Form Builder</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <nav class="blog-pagination">
+                        <a class="btn btn-outline-primary" href="/">Back to home</a>
+                    </nav>
                 </div>
             </aside>
         </div>
+        <div class="modal fade" id="addFieldModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="name" class="col-2 col-form-label">Name/ID</label>
+                                <div class="col-4">
+                                    <input id="name" name="name" placeholder="Name must be unique" type="text" class="form-control here">
+                                </div>
+                                <label for="type" class="col-2 col-form-label">Type</label>
+                                <div class="col-4">
+                                    <select id="type" name="type" class="custom-select">
+                                        <option value="text">Text</option>
+                                        <option value="number">Number</option>
+                                        <option value="password">Password</option>
+                                        <option value="email">Email</option>
+                                        <option value="url">URL</option>
+                                        <option value="color">Color</option>
+                                        <option value="file">File</option>
+                                        <option value="date">Date</option>
+                                        <option value="time">Time</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="max" class="col-2 col-form-label">Max</label>
+                                <div class="col-4">
+                                    <input id="max" name="max" type="text" class="form-control here" aria-describedby="maxHelpBlock" placeholder="Valid for type= number">
+                                </div>
+                                <label for="min" class="col-2 col-form-label">Min</label>
+                                <div class="col-4">
+                                    <input id="min" name="min" type="text" class="form-control here" aria-describedby="minHelpBlock" placeholder="Valid for type= number">
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label for="label" class="col-2 col-form-label">Label</label>
+                                <div class="col-4">
+                                    <input id="label" name="label" type="text" class="form-control here" placeholder="Label to be displayed" aria-describedby="labelHelpBlock">
+
+                                </div>
+                                <label for="labelClass" class="col-2 col-form-label">Label Class</label>
+                                <div class="col-4">
+                                    <input id="labelClass" name="labelClass" type="text" placeholder="Class for label" class="form-control here" aria-describedby="labelClassHelpBlock">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="help" class="col-2 col-form-label">Help text</label>
+                                <div class="col-4">
+                                    <input id="help" name="help" type="text" class="form-control here" aria-describedby="helpHelpBlock">
+                                    <span id="helpHelpBlock" class="form-text text-muted">Help text to be displayed (like this one !)</span>
+                                </div>
+                                <label for="helpClass" class="col-2 col-form-label">Help class</label>
+                                <div class="col-4">
+                                    <input id="helpClass" name="helpClass" type="text" class="form-control here" placeholder="Class to be displayed in help box"
+                                        aria-describedby="helpClassHelpBlock">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="default" class="col-2 col-form-label">Default value</label>
+                                <div class="col-4">
+                                    <input id="default" name="default" type="text" class="form-control here">
+                                </div>
+                                <label for="maxLength" class="col-2 col-form-label">Size</label>
+                                <div class="col-4">
+                                    <input id="maxLength" name="maxLength" type="text" placeholder="The max size of input" class="form-control here" aria-describedby="maxLengthHelpBlock">
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputClass" class="col-2 col-form-label">Input class</label>
+                                <div class="col-4">
+                                    <input id="inputClass" name="inputClass" type="text" class="form-control here" aria-describedby="inputClassHelpBlock" placeholder="Class to be specified in the input element">
+
+                                </div>
+                                <label for="pattern" class="col-2 col-form-label">Pattern</label>
+                                <div class="col-4">
+                                    <input id="pattern" name="pattern" type="text" placeholder="Pattern the input must match" class="form-control here" aria-describedby="patternHelpBlock">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-2">Required</label>
+                                <div class="col-4">
+                                    <label class="custom-control custom-radio">
+                                        <input name="required" type="radio" class="custom-control-input" value="true" aria-describedby="requiredHelpBlock">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">True</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input name="required" type="radio" class="custom-control-input" value="false" aria-describedby="requiredHelpBlock">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">False</span>
+                                    </label>
+                                    <span id="requiredHelpBlock" class="form-text text-muted">Whether this field is required</span>
+                                </div>
+                                <label class="col-2">Read only</label>
+                                <div class="col-4">
+                                    <label class="custom-control custom-radio">
+                                        <input name="readOnly" type="radio" class="custom-control-input" value="true" aria-describedby="readOnlyHelpBlock">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">True</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input name="readOnly" type="radio" class="custom-control-input" value="false" aria-describedby="readOnlyHelpBlock">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">False</span>
+                                    </label>
+                                    <span id="readOnlyHelpBlock" class="form-text text-muted">Whether input is editable</span>
+                                </div>
+                            </div>
+
+                           
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
     <footer class="blog-footer">
         <p>{{project_title}}</p>
@@ -243,70 +274,99 @@
     </footer>
 
 
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-
-        <script src="../assets/jsf/jsonSchemaForm.js"></script>
-        <script>
-            var schema = {
-                id:"example",
-                name:"exampleForm",
-                errorDivId:"exampleDiv",
-                fields:[
-                    {
-                        type:"text",
-                        name:"username",
-                        label:"Username",
-                        inputClass:"form-control",
-                        help:"Enter your username",
-                        helpClass:"form-text text-muted"
-                    },
-                    {
-                        type:"password",
-                        name:"password",
-                        label:"Password",
-                        inputClass:"form-control",
-                        help:"Enter your password",
-                        helpClass:"form-text text-muted"
-                    },
-                    {
-                        type:"select",
-                        option:[{"name":"Administrator",value:"admin"},{"name":"Manager","value":"manager"}],
-                        name:"role",
-                        label:"Role",
-                        inputClass:"form-control",
-                        help:"Select your role",
-                        helpClass:"form-text text-muted"
-                    },
-                ]
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="../assets/cm/codemirror.js"></script>
+    <script src="../assets/cm/javascript.js"></script>
+    <script src="../assets/cm/closebrackets.js"></script>
+    <script src="../assets/jsf/jsonSchemaForm.js"></script>
+    <script>
+        var buildSchema = {};
+        buildSchema.id = "  ";
+        buildSchema.name = "  ";
+        buildSchema.errorDivId = "errors";
+        buildSchema.fields = [];
+        var txtbox = document.getElementById("cmbuilder");
+        var formBuilder = CodeMirror.fromTextArea(txtbox, { value: " ", fixedGutter: true, lineNumbers: true, autoCloseBrackets: true });
+        //var myCodeMirror = CodeMirror.fromTextArea(txtbox);
+        formBuilder.setValue(JSON.stringify(buildSchema, null, 2));
+        var resultForm = new jsonSchemaForm({id:"example1",name:"example",errorDivId:"errors",fields:[]});
+        formBuilder.on('change', function (e) {
+            // console.log();
+            try {
+                validSchema = JSON.parse(formBuilder.getValue());
+                $("#example1").html(" ");
+                resultForm.initTemplate(validSchema) ;
+                resultForm.resetForm() ;
+            } catch (e) {
+                $("#example1").html("<div class='alert alert-danger'>"+e+"</div>");
             }
-            var eg = new jsonSchemaForm(schema);
-            new Clipboard('.btn');
-            $("#schemaCode").html("<pre class='objCode'>"+JSON.stringify(schema,null,2)+"</pre>");
-            $("#getData").on("click",function(){
-                var data = [];
-                data[0] = eg.getdata("json",null);
-                data[1] = eg.getdata("string"," ");
-                data[2] = eg.getdata("serialized",null);
-                $("#resultData").html("JSON <pre class='objCode'>"+JSON.stringify(data[0],null,2)+
-                    "</pre>String <pre class='objCode'>"+JSON.stringify(data[1],null,2)+
-                    "</pre> Serialized <pre class='objCode'>"+JSON.stringify(data[2],null,2)+"</pre");
-                //console.log(data);
-            });
-            $("#setData").on("click",function(){
-                eg.addData({username:"Something",password:"Secret",role:"manager"})
-            });
-            $("#resetForm").on("click",function(){
-                eg.resetForm();
-            })
 
-        </script>
+        });
+
+
+
+
+        var schema = {
+            id: "example",
+            name: "exampleForm",
+            errorDivId: "exampleDiv",
+            fields: [
+                {
+                    type: "text",
+                    name: "username",
+                    label: "Username",
+                    inputClass: "form-control",
+                    help: "Enter your username",
+                    helpClass: "form-text text-muted"
+                },
+                {
+                    type: "password",
+                    name: "password",
+                    label: "Password",
+                    inputClass: "form-control",
+                    help: "Enter your password",
+                    helpClass: "form-text text-muted"
+                },
+                {
+                    type: "select",
+                    option: [{ "name": "Administrator", value: "admin" }, { "name": "Manager", "value": "manager" }],
+                    name: "role",
+                    label: "Role",
+                    inputClass: "form-control",
+                    help: "Select your role",
+                    helpClass: "form-text text-muted"
+                },
+            ]
+        }
+        var eg = new jsonSchemaForm(schema);
+        new Clipboard('.btn');
+        $("#schemaCode").html("<pre class='objCode'>" + JSON.stringify(schema, null, 2) + "</pre>");
+        $("#getData").on("click", function () {
+            var data = [];
+            data[0] = eg.getdata("json", null);
+            data[1] = eg.getdata("string", " ");
+            data[2] = eg.getdata("serialized", null);
+            $("#resultData").html("JSON <pre class='objCode'>" + JSON.stringify(data[0], null, 2) +
+                "</pre>String <pre class='objCode'>" + JSON.stringify(data[1], null, 2) +
+                "</pre> Serialized <pre class='objCode'>" + JSON.stringify(data[2], null, 2) + "</pre");
+            //console.log(data);
+        });
+        $("#setData").on("click", function () {
+            eg.addData({ username: "Something", password: "Secret", role: "manager" })
+        });
+        $("#resetForm").on("click", function () {
+            eg.resetForm();
+        })
+
+    </script>
 </body>
+
 </html>
