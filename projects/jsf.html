@@ -347,21 +347,24 @@
             ]
         }
         var eg = new jsonSchemaForm(schema);
-        new Clipboard('.btn');
+
         $("#schemaCode").html("<pre class='objCode'>" + JSON.stringify(schema, null, 2) + "</pre>");
+
         $("#getData").on("click", function () {
             var data = [];
             data[0] = eg.getdata("json", null);
             data[1] = eg.getdata("string", " ");
             data[2] = eg.getdata("serialized", null);
-            $("#resultData").html("JSON <pre class='objCode'>" + JSON.stringify(data[0], null, 2) +
+            $("#resultData").html("<b>Data <hr></b>JSON <pre class='objCode'>" + JSON.stringify(data[0], null, 2) +
                 "</pre>String <pre class='objCode'>" + JSON.stringify(data[1], null, 2) +
-                "</pre> Serialized <pre class='objCode'>" + JSON.stringify(data[2], null, 2) + "</pre");
+                "</pre> Serialized <pre class='objCode'>" + JSON.stringify(data[2], null, 2) + "</pre> <hr>");
             //console.log(data);
         });
+
         $("#setData").on("click", function () {
             eg.addData({ username: "Something", password: "Secret", role: "manager" })
         });
+
         $("#resetForm").on("click", function () {
             eg.resetForm();
         })

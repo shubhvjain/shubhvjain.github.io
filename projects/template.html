@@ -28,6 +28,7 @@
     <main role="main" class="container">
         <div class="row">
             <div class="col-sm-8 blog-main">
+
                 <div class="blog-post" id="docs">
                     <h2 class="blog-post-title">Documentation</h2>
                     <hr>
@@ -60,25 +61,27 @@
                 </div>
             </div>
             <aside class="col-sm-3 ml-sm-auto blog-sidebar">
-                <div class="sidebar-module">
-                    <h4>Content</h4>
-                    <ol class="list-unstyled">
-                        <li>
-                            <a href="#docs">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#">Demo</a>
-                        </li>
-                        <li>
-                            <a href="#{{div_id}}">{{div_header}}</a>
-                        </li>
-                    </ol>
+                <div class="sticky">
+                    <div class="sidebar-module">
+                        <h4>Content</h4>
+                        <ol class="list-unstyled" id='content'>
+                            <li>
+                                <a href="#docs">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Demo</a>
+                            </li>
+                            <li>
+                                <a href="#{{div_id}}">{{div_header}}</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <nav class="blog-pagination">
+                        <a class="btn btn-outline-primary" href="/">Back to home</a>
+                        <a class="btn btn-outline-primary" href="#">Other links</a>
+                        <a class="btn btn-outline-primary" href="{{ext_link}}">{{external_link}}</a>
+                    </nav>
                 </div>
-                <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="/">Back to home</a>
-                    <a class="btn btn-outline-primary" href="#">Other links</a>
-                    <a class="btn btn-outline-primary" href="{{ext_link}}">{{external_link}}</a>
-                </nav>
             </aside>
         </div>
     </main>
@@ -94,6 +97,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
 </body>
+
 </html>
