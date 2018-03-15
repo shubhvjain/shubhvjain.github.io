@@ -1,101 +1,112 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Shubh Vardhan Jain">
+<html>
+	<head>
+		<title>Shubh </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main">
+								<header>
+										<span class="avatar"><img src="images/avatar.png" alt="" /></span>
+										<h1>Shubh Vardhan Jain</h1>
+										<p id="designation">Full stack web developer</p>
+										<p id="location">Bhopal,India</p>
+									</header>
+									<footer>
+										<div id="connect">
+											
+										</div>
+										Skills
+										<div id="skillListDiv"></div>
+								</footer>
+								
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Shubh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-    <title>Shubh Vardhan Jain</title>
+			</div>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="./assets/index.css" rel="stylesheet">
-    
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+			<script>
+			let data = {
+				designation:"Full stack web developer",
+				location:"Bhopal,India",
+				
+				skills:[[{name:'HTML5',class:'lang1'},{name:'CSS3',class:'lang1'},{name:'JavaScript',class:'lang1'},{name:'jQuery',class:'lang1'},{name:'BootStrap',class:'lang1'},{name:'Handlebar',class:'lang1'}],
+						[{name:'Node.js',class:'lib1'},{name:'REST API',class:'lib1'},{name:'Express Framework',class:'lib1'},{name:'ejs',class:'lib1'},{name:'PHP',class:'lib1'}],
+						[{name:'MongoDB',class:'lang2'},{name:'Couch DB',class:'lang2'},{name:'MySQL',class:'lang2'}],
+						[{name:'Git',class:'lang4'}]],
+				contacts:[
+					{
+						name:'LinkedIn',
+						icon:'fa-linkedin',
+						value:'https://www.linkedin.com/in/shubh-vardhan-jain'
+					},
+					{
+						name:'Github',
+						icon:'fa-github',
+						value:'https://github.com/shubhvjain'
+					},
+				],
+				email:"shubhvjain@gmail.com"
+			}
+			let skillTemplate = `
+			<ul class="skillList">
+				{{#each skillList}}
+				<li>
+					<ul class="skillSubList">
+						{{#each this}}
+							<li class='{{this.class}}'>{{this.name}}</li>
+						{{/each}}
+					</ul>
+				</li>
+				{{/each}}
+			</ul>
 
-</head>
+			`;
+			let connectTemplate = `
+			<ul class="icons">
+				<li><a a href="mailto:{{email}}" target="_top" class="fa-envelope">Mail</a></li>
+				{{#each connect}}
+					<li><a href="{{this.value}}" target="_blank" class="{{this.icon}}">{{this.name}}</a></li>
+				{{/each}}
+			</ul>
+			`
+			var template1 = Handlebars.compile(skillTemplate);
+			var html1    = template1({skillList:data.skills});
 
-<body>
-    <main role="main" class="container">
-        <div class="content-center">
-            <img src="./assets/shubh.png" class="rounded-circle mx-auto d-block img-fluid small-img" alt="Shubh Vardhan Jain">
-            <h1 class="text-center">Shubh Vardhan Jain</h1>
-            <p class="lead text-center">Full stack web developer</p>
-            <div class="row">
-                <div class="col-md-7 bordered-div">
-                    <h4>Skills</h4><br>
-                    <ul class="skill-list">
-                        <li>
-                            <!-- Front End -->
-                            <ul class="skill-sub-list">
-                                <li class="lang1">HTML5</li>
-                                <li class="lang1">CSS3</li>
-                                <li class="lang1">JavaScript</li>
-                                <li class="lang1">jQuery</li>
-                                <li class="lang1">BootStrap</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <!-- Back end -->
-                            <ul class="skill-sub-list">
-                                <li class="lib1">Node.js</li>
-                                <li class="lib1">Express Framework</li>
-                                <li class="lib1">PHP</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <!-- DBMS -->
-                            <ul class="skill-sub-list">
-                                <li class="lang2">MongoDB</li>
-                                <li class="lang2">MySQL</li>
-                            </ul>
+			var template2 = Handlebars.compile(connectTemplate);
+			var html2    = template2({connect:data.contacts,email:data.email});
 
-                        </li>
-                        <li>
-                            <!-- Other -->
-                            <ul class="skill-sub-list">
-                                <li class="lang4">Git</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div class="col-md-1"></div> -->
+			let skdiv = document.getElementById('skillListDiv');
+			skdiv.innerHTML=html1;
 
-                <div class="col-md-5 bordered-div">
-                    <h4>Contact me</h4> <br>
-                    <ul class="contact-list">
-                        <li><i class="material-icons">person_pin_circle</i> <span>Bhopal,India</span></li>
-                        <li><i class="material-icons">email</i><span>shubhvjain@gmail.com</span></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i> <span><a target="blank" href="https://github.com/shubhvjain">shubhvjain</a></span></li>
-                        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><span><a target="blank" href="https://www.linkedin.com/in/shubh-vardhan-jain">LinkedIn Profile</a></span> </li>
-                    </ul>
-                </div>
-            </div>
-<!--             <div class="row">
-                <div class="col-md-12">
-                    <h4>Projects</h4> <br>
-                    <ul class="project-list">
-                        <li>InputDataTable</li>
-                        <li>JSONSchemaForm</li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
-    </main>
-    <!-- /.container -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-        <script src="./assets/index.js"></script>    
+			let conndiv = document.getElementById('connect');
+			conndiv.innerHTML=html2;
 
+			</script>
 </body>
 
 </html>
