@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
+ @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /*
@@ -81,7 +81,7 @@
 	html {
 		height: 100%;
 	}
-
+     /*background image */
 	body {
 		height: 100%;
 		background-color: #ffffff;
