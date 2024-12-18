@@ -1,0 +1,12 @@
+{
+  "id": "navigation",
+  "type": "menu",
+  "content": [
+    { "title": "Intro", "link": "/intro" },
+    { "title": "Blog Post 1", "link": "/blog1" },
+    { "title": "Projects", "link": "/project1" }
+  ],
+  "meta": {
+    "title": "Navigation"
+  }
+}
