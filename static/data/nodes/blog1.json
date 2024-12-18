@@ -1,0 +1,9 @@
+{
+  "id": "blog1",
+  "type": "blog_post",
+  "content": "This is a blog post.",
+  "meta": {
+    "link": "blog1",
+    "title": "Blog Post 1"
+  }
+}

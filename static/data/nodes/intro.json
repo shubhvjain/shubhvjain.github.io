@@ -1,0 +1,9 @@
+{
+  "id": "intro",
+  "type": "section",
+  "content": "Welcome to the intro node!",
+  "meta": {
+    "link": "intro",
+    "title": "Intro"
+  }
+}
