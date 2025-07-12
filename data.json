@@ -1,15 +1,263 @@
 {
-  "photos":{
-    "about":"A gallery of photos I took",
-    "list":[
+  "photos": {
+    "about": "A gallery of photos I took",
+    "list": [
       {
-        "caption":"",
-        "location":"",
-        "time":"",
-        "tags":[],
-        "url":"stuff"
+        "caption": "Traveling through the rain",
+        "location": "Bhopal,India",
+        "time": "2020-08-07",
+        "tags": ["rain"],
+        "url": "images/01.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening","clouds"],
+        "url": "images/02.png"
+      },
+      {
+        "caption": "Sanchi Stupa",
+        "location": "Sanchi,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/03.png"
+      },
+      {
+        "caption": "Somewhere in the world",
+        "location": "Earth",
+        "time": "2022-03-29",
+        "tags": ["evening"],
+        "url": "images/04.png"
+      },
+      {
+        "caption": "First glimpse of Erlangen",
+        "location": "Erlangen,Germany",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/05.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/06.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/07.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/08.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/09.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/10.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/11.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/12.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/13.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/14.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/15.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/16.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/17.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/18.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/19.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/20.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/21.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/22.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/23.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/24.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/25.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/26.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/27.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/28.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/29.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/30.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/31.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/32.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/33.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/34.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/35.png"
+      },
+      {
+        "caption": "An evening",
+        "location": "Bhopal,India",
+        "time": "2020-08-30",
+        "tags": ["evening"],
+        "url": "images/36.png"
       }
+    
+    
+     
+      
     ]
   }
-
 }
