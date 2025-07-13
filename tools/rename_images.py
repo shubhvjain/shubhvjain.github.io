@@ -16,7 +16,7 @@ def rename_images_to_imgN(folder):
 
     for index, filename in enumerate(image_files, start=1):
         ext = os.path.splitext(filename)[1].lower()
-        new_name = f"img{index}{ext}"
+        new_name = f"{index}{ext}"
         src = os.path.join(folder, filename)
         dst = os.path.join(folder, new_name)
 
