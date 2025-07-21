@@ -7,252 +7,252 @@
         "location": "Bhopal,India",
         "time": "2020-08-07",
         "tags": ["rain"],
-        "url": "images/p1.png"
+        "url": "/images/p1.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
         "time": "2020-08-30",
         "tags": ["evening","clouds","sunset"],
-        "url": "images/p2.png"
+        "url": "/images/p2.png"
       },
       {
         "caption": "Sanchi Stupa",
         "location": "Sanchi,India",
         "time": "2020-08-30",
         "tags": ["evening"],
-        "url": "images/p3.png"
+        "url": "/images/p3.png"
       },
       {
         "caption": "Somewhere in the world",
         "location": "Earth",
         "time": "2022-03-29",
         "tags": ["evening"],
-        "url": "images/p4.png"
+        "url": "/images/p4.png"
       },
       {
         "caption": "First glimpse of Erlangen",
         "location": "Erlangen,Germany",
         "time": "2022-04-01",
         "tags": ["evening"],
-        "url": "images/p5.png"
+        "url": "/images/p5.png"
       },
       {
         "caption": "The beginning of summer?",
         "location": "Erlangen,Germany",
         "time": "2022-04-01",
         "tags": ["snow"],
-        "url": "images/p6.png"
+        "url": "/images/p6.png"
       },
       {
         "caption": "View for the castle",
         "location": "Nuremberg,Germany",
         "time": "2022-04-09",
         "tags": ["city","clouds"],
-        "url": "images/p7.png"
+        "url": "/images/p7.png"
       },
       {
         "caption": "The streets",
         "location": "Nuremberg,Germany",
         "time": "2022-04-09",
         "tags": ["street"],
-        "url": "images/p8.png"
+        "url": "/images/p8.png"
       },
       {
         "caption": "Summer is here",
         "location": "Erlangen,Germany",
         "time": "2022-05-15",
         "tags": ["rainbow","garden"],
-        "url": "images/p9.png"
+        "url": "/images/p9.png"
       },
       {
         "caption": "An evening in the fields",
         "location": "Erlangen,Germany",
         "time": "2022-06-12",
         "tags": ["evening","field","sunset"],
-        "url": "images/p10.png"
+        "url": "/images/p10.png"
       },
       {
         "caption": "Sunflowers : my walking buddies",
         "location": "Erlangen,Germany",
         "time": "2022-07-30",
         "tags": ["nature"],
-        "url": "images/p11.png"
+        "url": "/images/p11.png"
       },
       {
         "caption": "Remembering the past",
         "location": "Erlangen,Germany",
         "time": "2022-09-26",
         "tags": ["street","history"],
-        "url": "images/p12.png"
+        "url": "/images/p12.png"
       },
       {
         "caption": "Spring 1",
         "location": "Erlangen,Germany",
         "time": "2022-10-10",
         "tags": ["spring","sky"],
-        "url": "images/p13.png"
+        "url": "/images/p13.png"
       },
       {
         "caption": "Spring 2",
         "location": "Erlangen,Germany",
         "time": "2022-10-10",
         "tags": ["spring","sky"],
-        "url": "images/p14.png"
+        "url": "/images/p14.png"
       },
       {
         "caption": "GOT Vibes ?",
         "location": "Girona,Spain",
         "time": "2022-10-15",
         "tags": ["city","night","Spain trip 22","summer"],
-        "url": "images/p15.png"
+        "url": "/images/p15.png"
       },
       {
         "caption": "Beautiful view of the Mediterranean Sea",
         "location": "Calella de Palafrugell ,Spain",
         "time": "2022-10-15",
         "tags": ["water","Spain trip 22","summer"],
-        "url": "images/p16.png"
+        "url": "/images/p16.png"
       },
       {
         "caption": "At the beach",
         "location": "Calella de Palafrugell ,Spain",
         "time": "2022-10-15",
         "tags": ["evening","beach","Spain trip 22","summer"],
-        "url": "images/p17.png"
+        "url": "/images/p17.png"
       },
       {
         "caption": "Christmas market ",
         "location": "Nuremberg,Germany",
         "time": "2022-11-25",
         "tags": ["evening"],
-        "url": "images/p18.png"
+        "url": "/images/p18.png"
       },
       {
         "caption": "Snow in winter",
         "location": "Erlangen,Germany",
         "time": "2022-12-18",
         "tags": ["evening","snow"],
-        "url": "images/p19.png"
+        "url": "/images/p19.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p20.png"
+        "url": "/images/p20.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p21.png"
+        "url": "/images/p21.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p22.png"
+        "url": "/images/p22.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p23.png"
+        "url": "/images/p23.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p24.png"
+        "url": "/images/p24.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p25.png"
+        "url": "/images/p25.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p26.png"
+        "url": "/images/p26.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p27.png"
+        "url": "/images/p27.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p28.png"
+        "url": "/images/p28.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p29.png"
+        "url": "/images/p29.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p30.png"
+        "url": "/images/p30.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p31.png"
+        "url": "/images/p31.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p32.png"
+        "url": "/images/p32.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p33.png"
+        "url": "/images/p33.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p34.png"
+        "url": "/images/p34.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p35.png"
+        "url": "/images/p35.png"
       },
       {
         "caption": "An evening",
         "location": "Bhopal,India",
-        "time": "2020-08-30",
+        "time": "2023-08-30",
         "tags": ["evening"],
-        "url": "images/p36.png"
+        "url": "/images/p36.png"
       }
     
     

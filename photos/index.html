@@ -343,7 +343,7 @@ createApp({
     },
   },
   mounted() {
-    fetch('/data.json')
+    fetch('./data.json')
       .then((res) => res.json())
       .then((data) => {
         this.about = data.photos.about;
