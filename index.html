@@ -1,0 +1,34 @@
+---
+title: "SVJ's blog - Home"
+layout: default
+---
+
+  <!-- About -->
+
+   <div class="mb-5">
+    <h1>{{ site.data.info.tagline }}</h1>
+    <p class="text-muted">
+      {{ site.data.info.about }}
+    </p>
+  </div>
+
+<div class="row mb-5">
+  <!-- Posts -->
+  <div class="col-9">
+    <h5 class="mb-3">Posts</h5>
+    {% for post in site.posts %}
+      <div class="d-flex justify-content-between align-items-center py-2 border-bottom1">
+        <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+        <small class="text-muted">{{ post.date | date: "%d-%m-%Y" }}</small>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Tags -->
+  <div class="col-3">
+    <h5 class="mb-3">Tags</h5>
+    {% for tag in site.tags %}
+      <a href="/tags/{{ tag[0] }}/" class="badge bg-secondary text-decoration-none me-1 mb-1">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+</div>
