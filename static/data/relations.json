@@ -1,9 +1,0 @@
-{
-  "edges":[
-    {
-      "node1":"intro",
-      "node2":"about",
-      "edge_name":"nav"
-    }
-  ]
-}

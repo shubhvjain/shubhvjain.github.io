@@ -1,0 +1,11 @@
+permalink: /post/:year-:month-:day-:title/
+
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tag-archive
+  permalinks:
+    tag: '/tags/:name/'
